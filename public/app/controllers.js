@@ -8,7 +8,7 @@ angular.module('JobCtrls', ['JobServices'])
     console.log(data);
   });
 
-  $scope.deleteRecipe = function(id, recipesIdx) {
+  $scope.deleteJob = function(id, recipesIdx) {
     Job.delete({ id: id }, function success(data) {
       $scope.jobs.splice(recipesIdx, 1);
     }, function error(data) {
@@ -28,8 +28,7 @@ angular.module('JobCtrls', ['JobServices'])
 .controller('NewCtrl', ['$scope', '$location', 'Job', function($scope, $location, Job) {
   $scope.job = {
     title: '',
-    description: '',
-    image: ''
+    description: ''
   };
 
   $scope.createJob = function() {
