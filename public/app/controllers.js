@@ -33,7 +33,7 @@ angular.module('JobCtrls', ['JobServices'])
 
   $scope.createJob = function() {
     Job.save($scope.job, function success(data) {
-      $location.path('/');
+      $location.path('/user/job');
     }, function error(data) {
       console.log(data);
     });
