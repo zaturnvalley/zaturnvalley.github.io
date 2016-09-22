@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('morgan')('dev'));
 
-app.use('/api/recipes', expressJWT({secret: secret}), require('./controllers/recipes'));
+app.use('/api/users/jobs', expressJWT({secret: secret}), require('./controllers/jobs'));
 app.use('/api/users', expressJWT({secret: secret}).unless({method: 'POST'}), require('./controllers/users'));
 
 // Replace the above routes with the following
