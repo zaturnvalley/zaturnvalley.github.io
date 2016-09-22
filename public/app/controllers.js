@@ -28,8 +28,7 @@ angular.module('JobCtrls', ['JobServices'])
 .controller('NewCtrl', ['$scope', '$location', 'Job', function($scope, $location, Job) {
   $scope.job = {
     title: '',
-    description: '',
-    image: ''
+    description: ''
   };
 
   $scope.createJob = function() {
