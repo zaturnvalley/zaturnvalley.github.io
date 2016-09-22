@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
+var JobSchema = require('./schemas/job');
 
 var UserSchema = mongoose.Schema({
   name: String,
@@ -11,7 +12,8 @@ var UserSchema = mongoose.Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  jobs: [JobSchema] 
 });
 
 UserSchema.set('toJSON', {

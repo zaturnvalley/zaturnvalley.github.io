@@ -1,5 +1,5 @@
 var express = require('express');
-var Job = require('../models/job');
+var Job = require('../models/schemas/job');
 var router = express.Router();
 
 router.route('/')
