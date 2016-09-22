@@ -1,0 +1,14 @@
+<h1>User</h1>
+
+<a href="/user/jobs/new" class="btn btn-success">New Job</a>
+
+<div class="form-group">
+  <label for="search">Enter Job Description</label>
+  <input type="text" class="form-control" id="search" ng-model="search">
+</div>
+
+<div class="well" ng-repeat="job in jobs | filter:{title:search} track by job._id">
+  <h1>{{job.title}}</h1>
+  <a ng-href="/recipes/{{recipe._id}}">Permalink</a>
+  <a ng-click="deleteRecipe(recipe._id, $index)" class="btn btn-danger glyphicon glyphicon-trash pull-right"></a>
+</div>

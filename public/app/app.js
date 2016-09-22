@@ -1,4 +1,4 @@
-var app = angular.module('WordResumeApp', ['ui.router']);
+var app = angular.module('WordResumeApp', ['ui.router', 'JobCtrls']);
 
 app.config([
   '$stateProvider',
@@ -13,8 +13,7 @@ app.config([
     $stateProvider
   .state('home', {
     url: '/',
-    templateUrl: 'app/views/user.html',
-    controller: 'UserCtrl'
+    templateUrl: 'app/views/user.html'
   })
   .state('signup', {
     url: '/signup',
