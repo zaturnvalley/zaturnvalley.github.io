@@ -1,1 +1,2 @@
-# GA_hackathon
+# Resume Wordify!
+## Team: Boet, Kendra, Zach, Zoe
