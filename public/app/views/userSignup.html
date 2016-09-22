@@ -1,5 +1,5 @@
 <form ng-submit="userSignup()">
-  <legend>Signup</legend>
+  <div class="legend text-center"><legend>Signup</legend></div>
 
   <div class="form-group">
     <label for="email">Email</label>
@@ -9,6 +9,8 @@
     <label for="password">Password</label>
     <input type="password" class="form-control" id="password" placeholder="********" ng-model="user.password">
   </div>
+<div class="form-group text-center">
+    <button type="submit" class="btn btn-primary">Signup</button>
+</div>
 
-  <button type="submit" class="btn btn-primary">Signup</button>
 </form>
