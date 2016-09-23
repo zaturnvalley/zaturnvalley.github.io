@@ -1,5 +1,6 @@
 var express = require('express');
 var Job = require('../models/schemas/job');
+var User = require('../models/user');
 var router = express.Router();
 
 router.route('/')
@@ -11,7 +12,9 @@ router.route('/')
     });
   })
   .post(function(req, res) {
+    console.log('we are in the post');
     Job.create(req.body, function(err, job) {
+      console.log('we are in the callback');
       if (err) return res.status(500).send(err);
 
       return res.send(job);

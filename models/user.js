@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
-var JobSchema = require('./schemas/job');
 
 var UserSchema = mongoose.Schema({
   name: String,
@@ -13,7 +12,10 @@ var UserSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  jobs: [JobSchema] 
+  jobs: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Job'
+  }]
 });
 
 UserSchema.set('toJSON', {
