@@ -16,6 +16,14 @@ body {
 
 h1 {
     font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .jumbotron {
@@ -58,6 +66,14 @@ user-buttons button {
     /*border-radius: 20px;*/
 }
 
+.navbar-default .navbar-toggle {
+  width: 45px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  border-color: #fff;
+  background-color: #fff;
+}
 
 /*
   ========================================
@@ -65,25 +81,10 @@ user-buttons button {
   ========================================
 */
 
-$color: #318FF7;
-h1,
 input::-webkit-input-placeholder,
 button {
-    font-family: 'roboto', sans-serif;
     transition: all 0.3s ease-in-out;
 }
-
-
-/*h1 {
-  height: 100px;
-  width: 100%;
-  font-size: 18px;
-  background: darken($color, 4%);
-  color: #318FF7;
-  line-height: 150%;
-  border-radius: 3px 3px 0 0;
-  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
-}*/
 
 form {
     background-color: #fff;
@@ -163,4 +164,22 @@ form legend {
     padding-top: 10px;
 }
 
+.error {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
 
+.glyphicon-remove {
+  font-size: 110px;
+  margin-top: 30px;
+}
+
+.text-area {
+  width: 90vw;
+}
+
+.job-input label {
+  color: #fff;
+  margin-left: 0px;
+  font-size: 20px;
+}

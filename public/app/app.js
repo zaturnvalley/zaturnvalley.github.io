@@ -13,7 +13,7 @@ app.config([
     $stateProvider
   .state('home', {
     url: '/',
-    templateUrl: 'app/views/home.html'
+    templateUrl: 'app/views/user.html'
   })
   .state('signup', {
     url: '/signup',
@@ -25,13 +25,18 @@ app.config([
     templateUrl: 'app/views/userLogin.html',
     controller: 'LoginCtrl'
   })
-        .state('show', {
-          url: '/show',
-          templateUrl: 'app/views/showwordcloud.html',
-        })
+  .state('show', {
+    url: '/show',
+    templateUrl: 'app/views/showwordcloud.html',
+  })
   .state('404', {
     url: '/404',
     templateUrl: 'app/views/404.html'
+  })
+
+  .state('about', {
+    url: '/about',
+    templateUrl: 'app/views/about.html'
   })
   .state('job', {
     url: '/user/job',
@@ -40,8 +45,8 @@ app.config([
   .state('job/:id', {
     url: '/user/job/:id',
     templateUrl: 'app/views/jobShow.html'
-  });
 
+  });
 
     $locationProvider.html5Mode(true);
   }]);
