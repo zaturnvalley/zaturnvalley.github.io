@@ -86,7 +86,7 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-form {
+.login {
     background-color: #fff;
     box-sizing: border-box;
     width: 400px;
@@ -102,6 +102,10 @@ form {
 
 .form-control {
     width: 350px;
+}
+
+.form-header {
+  font-size: 25px;
 }
 
 input {

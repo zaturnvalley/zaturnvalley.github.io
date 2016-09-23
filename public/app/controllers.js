@@ -27,7 +27,6 @@ angular.module('JobCtrls', ['JobServices'])
 }])
 .controller('NewJobCtrl', ['$scope', '$location', 'Job', function($scope, $location, Job) {
   $scope.job = {
-    title: '',
     description: ''
   };
 
@@ -35,7 +34,7 @@ angular.module('JobCtrls', ['JobServices'])
     Job.save($scope.job, function success(data) {
       console.log('click');
       console.log(data);
-      $location.path('/user/job');
+      $location.path('/show');
     }, function error(data) {
       console.log(data);
     });
