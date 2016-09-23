@@ -168,3 +168,7 @@ form legend {
   font-size: 110px;
   margin-top: 30px;
 }
+
+.text-area {
+  width: 800px;
+}
