@@ -28,7 +28,11 @@ app.config([
   .state('404', {
     url: '/404',
     templateUrl: 'app/views/404.html'
+  })
+  .state('about', {
+    url: '/about',
+    templateUrl: 'app/views/about.html'
   });
-
+  
     $locationProvider.html5Mode(true);
   }]);
