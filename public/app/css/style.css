@@ -81,11 +81,8 @@ user-buttons button {
   ========================================
 */
 
-$color: #318FF7;
-
 input::-webkit-input-placeholder,
 button {
-    font-family: 'roboto', sans-serif;
     transition: all 0.3s ease-in-out;
 }
 
