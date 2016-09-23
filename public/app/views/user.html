@@ -4,18 +4,17 @@
         How do you make your job application stand out in a pool of dozens in an increasingly automated application process? Use our tool to identify keywords in a job description and tailor your resume to stand out in the crowd as the perfect candidate.
     </p>
 
-  <div class="form-group job-input"  ng-controller="NewJobCtrl">
+    <form ng-submit="showWordCloud()" ng-controller="JobCtrl">
+        <div class="form-group job-input">
+            <label for="jobDescription">Paste your job description here:</label>
+            <textarea class="form-control text-area" rows="20" id="jobDescription" name="description" ng-model="job.description"></textarea>
+        </div>
 
-<!--       <h1 class="text-center form-header">Enter Your Job</h1> -->
-    <form  ng-submit="createJob()">
-      <div class="form-group">
-        <label for="jobDescription">Paste your job decription here:</label>
-        <textarea type="text" class="form-control text-area" rows="20" id="jobDescription" ng-model="job.description"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-default">Wordify</button>
+        <p>
+            <button class="btn btn-default btn-lg" role="button">Wordify</button>
+        </p>
     </form>
-  </div>
+
 </div>
 
 

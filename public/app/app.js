@@ -28,6 +28,7 @@ app.config([
   .state('show', {
     url: '/show',
     templateUrl: 'app/views/showwordcloud.html',
+    controller: 'JobCtrl'
   })
   .state('404', {
     url: '/404',

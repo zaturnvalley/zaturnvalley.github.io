@@ -73,4 +73,21 @@ angular.module('JobCtrls', ['JobServices'])
       console.log(res);
     });
   };
+}]).controller('JobCtrl', ['$scope', '$http', '$stateParams', '$state', 'Job', function($scope, $http, $stateParams, $state, Job) {
+
+  $scope.showWordCloud = function() {
+    console.log("Called!");
+    Job.get({ description: $stateParams.job.description }, function success(data) {
+      $scope.job = data;
+    }, function error(data) {
+      console.log(data);
+    });
+    var job = {
+      description: $scope.job.description
+    };
+    console.log($scope.job.description);
+    $state.go('show', job);
+
+
+  };
 }]);
