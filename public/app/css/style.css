@@ -187,3 +187,10 @@ form legend {
   margin-left: 0px;
   font-size: 20px;
 }
+
+/*Bio Page*/
+.bios {
+  text-align: center;
+  background-color: #3631f7;
+  color: #fff;
+}
