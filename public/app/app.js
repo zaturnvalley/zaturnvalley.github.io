@@ -33,9 +33,19 @@ app.config([
     url: '/404',
     templateUrl: 'app/views/404.html'
   })
+
   .state('about', {
     url: '/about',
     templateUrl: 'app/views/about.html'
+  })
+  .state('job', {
+    url: '/user/job',
+    templateUrl: 'app/views/job.html'
+  })
+  .state('job/:id', {
+    url: '/user/job/:id',
+    templateUrl: 'app/views/jobShow.html'
+
   });
 
     $locationProvider.html5Mode(true);

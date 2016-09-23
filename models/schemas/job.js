@@ -1,12 +1,14 @@
 var mongoose = require('mongoose');
 
-var JobSchema = new mongoose.Schema({
+var schema = new mongoose.Schema({
   title: String,
   description: String,
-  user: {
+  user: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
-  }
+  }]
 });
 
-module.exports = JobSchema;
+var Job = mongoose.model('Job', schema);
+
+module.exports = Job;
