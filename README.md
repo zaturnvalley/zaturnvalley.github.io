@@ -1,5 +1,5 @@
 # Resume Wordifier!
-### Team: Boet @boetw, Kendra @kendradalley , Zach, Zoe @zmcdaniel
+### Team: [Boet](https://github.com/boetw), [Kendra](https://github.com/kendradalley) , [Zach](https://github.com/zaturnvalley), [Zoe](https://github.com/zmcdaniel)
 
 How do you make your job application stand out in a pool of dozens in an increasingly automated application process? Use our tool to identify keywords in a job description and tailor your resume to stand out in the crowd as the perfect candidate.
 
