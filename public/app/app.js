@@ -25,10 +25,15 @@ app.config([
     templateUrl: 'app/views/userLogin.html',
     controller: 'LoginCtrl'
   })
+        .state('show', {
+          url: '/show',
+          templateUrl: 'app/views/showwordcloud.html',
+        })
   .state('404', {
     url: '/404',
     templateUrl: 'app/views/404.html'
   });
+
 
     $locationProvider.html5Mode(true);
   }]);
