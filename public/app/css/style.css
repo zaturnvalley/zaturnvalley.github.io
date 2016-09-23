@@ -66,6 +66,14 @@ user-buttons button {
     /*border-radius: 20px;*/
 }
 
+.navbar-default .navbar-toggle {
+  width: 45px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  border-color: #fff;
+  background-color: #fff;
+}
 
 /*
   ========================================
@@ -170,5 +178,11 @@ form legend {
 }
 
 .text-area {
-  width: 800px;
+  width: 90vw;
+}
+
+.job-input label {
+  color: #fff;
+  margin-left: 0px;
+  font-size: 20px;
 }
