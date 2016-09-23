@@ -13,7 +13,7 @@ app.config([
     $stateProvider
   .state('home', {
     url: '/',
-    templateUrl: 'app/views/user.html'
+    templateUrl: 'app/views/home.html'
   })
   .state('signup', {
     url: '/signup',
@@ -32,6 +32,14 @@ app.config([
   .state('404', {
     url: '/404',
     templateUrl: 'app/views/404.html'
+  })
+  .state('job', {
+    url: '/user/job',
+    templateUrl: 'app/views/job.html'
+  })
+  .state('job/:id', {
+    url: '/user/job/:id',
+    templateUrl: 'app/views/jobShow.html'
   });
 
 
