@@ -86,7 +86,7 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-form {
+.login {
     background-color: #fff;
     box-sizing: border-box;
     width: 400px;
@@ -102,6 +102,10 @@ form {
 
 .form-control {
     width: 350px;
+}
+
+.form-header {
+  font-size: 25px;
 }
 
 input {
@@ -182,4 +186,11 @@ form legend {
   color: #fff;
   margin-left: 0px;
   font-size: 20px;
+}
+
+/*Bio Page*/
+.bios {
+  text-align: center;
+  background-color: #3631f7;
+  color: #fff;
 }
