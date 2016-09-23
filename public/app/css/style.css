@@ -104,6 +104,10 @@ form {
     width: 350px;
 }
 
+.form-header {
+  font-size: 25px;
+}
+
 input {
     margin: 40px 25px;
     width: 350px;
